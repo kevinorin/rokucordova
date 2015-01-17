@@ -1,6 +1,67 @@
-@media all{
-			.my-header-grid.ui-grid-b .ui-block-a { width: 30%; }
-			.my-header-grid.ui-grid-b .ui-block-b { width: 40%; }
-			.my-header-grid.ui-grid-b .ui-block-c { width: 30%; }
-			}
-		}
+body {
+	background: url('images/background.png') no-repeat;
+	background-size: 100%;
+}
+
+a { text-decoration: none; }
+
+.rokuLogo {
+	width: 100%; 
+	display:block; 
+	margin:0 auto;
+}
+
+/* Overrides */
+.ui-header .ui-title, .ui-footer .ui-title {
+	font-size: 16px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.ui-content .ui-listview, .ui-panel-inner>.ui-listview { 
+	margin: 0; /* list offset */
+}
+.ui-input-search.ui-shadow-inset.ui-btn-corner-all.ui-btn-shadow.ui-icon-searchfield.ui-body-c {
+	border: 2px solid #ddd; /* search field */
+}
+
+/* popup */
+.ui-popup.ui-overlay-shadow {
+	background: transparent !important;
+	border: none !important;
+}
+.ui-popup-container {
+	background: #e6e6e7;
+	border-radius: 25px;
+	padding: 30px 20px;
+}
+.ui-popup-container p {
+	color:#2d2d2d !important;
+	font-size: 14px;
+	line-height: 18px;
+}
+/* icons */
+.ui-header .ui-btn {
+	background: transparent !important;
+}
+.ui-controlgroup-horizontal .ui-btn.ui-last-child {
+	border-right: none;
+}
+span.ui-icon.ui-icon-back.ui-icon-shadow {
+	background: url('/images/back.png') no-repeat transparent;
+	background-size: 100%;
+}
+span.ui-icon.ui-icon-home.ui-icon-shadow {
+	background: url('/images/home.png') no-repeat transparent;
+	background-size: 100%;
+}
+span.ui-icon.ui-icon-info.ui-icon-shadow {
+	background: url('/images/info.png') no-repeat transparent;
+	background-size: 100%;
+}
+
+@media all {
+	.my-header-grid.ui-grid-b .ui-block-a { width: 30%; }
+	.my-header-grid.ui-grid-b .ui-block-b { width: 40%; }
+	.my-header-grid.ui-grid-b .ui-block-c { width: 30%; }
+}
+}

@@ -233,6 +233,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
 .ui-bar-a {
 	border-width: 1px;
 	border-style: solid;
+	margin-bottom: 20px;
 }
 /* Page and overlay */
 .ui-overlay-a,
@@ -250,7 +251,7 @@ html .ui-bar-a .ui-body-inherit,
 html .ui-body-a .ui-body-inherit,
 html body .ui-group-theme-a .ui-body-inherit,
 html .ui-panel-page-container-a {
-	background-color: #ddd /*{a-body-background-color}*/;
+	background-color: transparent; /*{a-body-background-color}*/;
 	border-color: #dddddd /*{a-body-border}*/;
 	color: #ffffff /*{a-body-color}*/;
 	text-shadow: 0 /*{a-body-shadow-x}*/ 0 /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #f3f3f3 /*{a-body-shadow-color}*/;
@@ -264,20 +265,20 @@ html .ui-panel-page-container-a {
 html .ui-bar-a a,
 html .ui-body-a a,
 html body .ui-group-theme-a a {
-	color: #8B0A50 /*{a-link-color}*/;
-	font-weight: bold;
+	color: #ffffff;
+	font-weight: normal;
 }
 .ui-page-theme-a a:visited,
 html .ui-bar-a a:visited,
 html .ui-body-a a:visited,
 html body .ui-group-theme-a a:visited {
-    color: #3388cc /*{a-link-visited}*/;
+    color: #ffffff /*{a-link-visited}*/;
 }
 .ui-page-theme-a a:hover,
 html .ui-bar-a a:hover,
 html .ui-body-a a:hover,
 html body .ui-group-theme-a a:hover {
-	color: #005599 /*{a-link-hover}*/;
+	color: #ffffff /*{a-link-hover}*/;
 }
 .ui-page-theme-a a:active,
 html .ui-bar-a a:active,
@@ -297,9 +298,12 @@ html .ui-bar-a .ui-btn:visited,
 html .ui-body-a .ui-btn:visited,
 html body .ui-group-theme-a .ui-btn:visited,
 html head + body .ui-btn.ui-btn-a:visited {
-	background-color: #fff /*{a-bup-background-color}*/;
-	border-color: #fff /*{a-bup-border}*/;
-	color: #fff /*{a-bup-color}*/;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 50px !important; 
+	-moz-border-radius: 50px !important; 
+	-webkit-border-radius: 50px !important; 
+	border: 0px solid #fff;
+	margin: 5px 0;
 	text-shadow: 0 /*{a-bup-shadow-x}*/ 0 /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #f3f3f3 /*{a-bup-shadow-color}*/;
 }
 /* Button hover */
@@ -321,7 +325,7 @@ html body .ui-group-theme-a .ui-btn:active,
 html head + body .ui-btn.ui-btn-a:active {
 	background-color: #8B0A50 /*{a-bdown-background-color}*/;
 	border-color: #8B0A50 /*{a-bdown-border}*/;
-	color: #fff /*{a-bdown-color}*/;
+	color: #fff !important /*{a-bdown-color}*/;
 	text-shadow: 0 /*{a-bdown-shadow-x}*/ 0 /*{a-bdown-shadow-y}*/ 0 /*{a-bdown-shadow-radius}*/ #f3f3f3 /*{a-bdown-shadow-color}*/;
 }
 /* Active button */
@@ -433,7 +437,7 @@ html body .ui-group-theme-b a {
 html .ui-bar-b a:visited,
 html .ui-body-b a:visited,
 html body .ui-group-theme-b a:visited {
-    color: #3388cc /*{b-link-visited}*/;
+    color: #ffffff /*{b-link-visited}*/;
 }
 .ui-page-theme-b a:hover,
 html .ui-bar-b a:hover,
